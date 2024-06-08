@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROJECTS</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+      body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+      body, html {
+        height: 100%;
+        color: #777;
+        line-height: 1.8;
+      }
+      
+      /* Create a Parallax Effect */
+      .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      
+      /* First image (Logo. Full height) */
+      .bgimg-1 {
+        background-image: url(logo.jpg);
+        min-height: 100%;
+      }
+      
+      /* Second image (Portfolio) */
+      .bgimg-2 {
+        background-image: url("/w3images/parallax2.jpg");
+        min-height: 400px;
+      }
+      
+      /* Third image (Contact) */
+      .bgimg-3 {
+        background-image: url("/w3images/parallax3.jpg");
+        min-height: 400px;
+      }
+      
+      .w3-wide {letter-spacing: 10px;}
+      .w3-hover-opacity {cursor: pointer;}
+      
+      /* Turn off parallax scrolling for tablets and phones */
+      @media only screen and (max-device-width: 1600px) {
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+          background-attachment: scroll;
+          min-height: 400px;
+        }
+      }
+      </style>
+  
+</head>
+<body>
+  <div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    
+      <a href="ports.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+      <a href="contact.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="project.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> PROJECT </a>
+      <a href="https://1drv.ms/b/s!AmKl2wCuZeoBi6sH60PEq4B8jFnRfg?e=d4w4IT" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> RESUME </a>
+      </a>
+    </div>
+  
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">HOME</a>
+      <a href="ports.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+      <a href="contact.html" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+      <a href="https://1drv.ms/b/s!AmKl2wCuZeoBi6sH60PEq4B8jFnRfg?e=d4w4IT" class="w3-bar-item w3-button" onclick="toggleFunction()">RESUME</a>
+      <a href="project.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECT</a>
+      
+    </div>
+  </div>
+  
+  <!-- First Parallax Image with Logo Text -->
+  <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+   
+     
+  </div>
+  <div class="container mt-5">
+
+
+
+  
+    <!-- Card 1 -->
+
+    <!-- Card 2 -->
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <img src="flipcart.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title">E-COMMERCE APPLICATION (INSPIRED BY FLIPCART) </h5>
+            <h6 class="card-text">
+              Project Overview :
+This is a Flipkart clone developed using the MERN stack (MongoDB, Express.js, React, and Node.js). This project replicates key features of Flipkart, a leading e-commerce platform, showcasing proficiency in full-stack web development and understanding of complex, real-world applications.
+            </h6>
+            
+<h6>
+  Key Features :
+
+
+Implemented user registration
+Product Management:
+
+Created a comprehensive product catalog with features to add and view products.
+Implemented product categorization and search functionality for efficient navigation.
+Shopping Cart:
+
+
+Order Processing:
+
+Built an order management system for users to place and review orders.
+Admin Dashboard:
+
+Created an admin panel for managing products, orders, and users.
+Implemented role-based access control to secure admin functionalities.
+
+DEPLOYED FRONTEND ON NETLIFY AND BACKEND ON RENDER
+</h6>
+
+<h6>
+Technical Stack :
+
+  Frontend: Developed using React.js with Redux for state management, providing a intuitive user interface.
+  Backend: Built with Node.js and Express.js, establishing a robust RESTful API to handle client requests and interact with the database.
+  Database: Used MongoDB for its scalability and flexibility in managing large datasets, especially suitable for e-commerce platforms.
+  
+  Optimized Performance: Utilized lazy loading and code splitting to enhance application performance and reduce initial load times.
+  Scalability: Designed the backend with scalability in mind, allowing easy expansion to support a growing number of users and products.
+  Testing: Implemented unit and integration tests using Jest and Mocha to ensure code reliability and robustness.
+  Challenges and Solutions
+  Handling Large Data: Managed performance issues related to large datasets by implementing efficient querying and indexing strategies in MongoDB.
+</h6>
+
+<div class="div1">
+  <a href="https://github.com/mohaimin37/flipcartfrontend" class="btn btn-primary">GITHUB (SOURCE-CODE-FRONTEND)</a>
+  <a href="https://github.com/mohaimin37/flipcartbackend" class="btn btn-primary">GITHUB (SOURCE-CODE-BACKEND)</a>
+
+  <a href="https://dynamic-starship-a18690.netlify.app" class="btn btn-primary">GO-TO APPLICATION</a>
+
+
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <br> <br>
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <img src="food.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title">FOOD-ORDER APPLICATION</h5>
+            <p class="card-text">
+              Project Overview :
+This Food Order Application is a comprehensive web application developed using the MERN stack (MongoDB, Express.js, React, and Node.js). This project emulates a modern food ordering system, allowing users to browse menus, place orders demonstrating expertise in full-stack development and real-time application management.
+            </p>
+            <h6>
+              Key Features
+User Authentication:
+Implemented secure user registration and login using JWT (JSON Web Tokens) for authentication and authorization.
+Passwords are hashed using bcrypt to ensure data security.
+
+
+Restaurant and Menu Management:
+
+Developed a dynamic system for adding, updating, and managing restaurant menus.
+Implemented a searchable and filterable menu, allowing users to easily find their desired dishes.
+Order Placement and Tracking:
+
+Enabled users to place orders, customize their dishes
+
+Cart Management:
+
+Designed a user-friendly cart system where users can add, remove, and update items.
+Included features like order summary and total cost calculation.
+
+x
+Admin Dashboard:
+
+Created an admin interface for managing restaurants, menus, orders, and users.
+DEPLOYED FRONTEND ON NETLIFY AND BACKEND ON RENDER
+
+            </h6>
+            
+            <h6>
+              Technical Stack :
+Frontend: Developed using React.js with CONTEXT API for state management, providing  intuitive user interface.
+Backend: Built with Node.js and Express.js, establishing a robust RESTful API to handle client requests and interact with the database.
+Database: Used MongoDB for its scalability and flexibility in managing large datasets, especially suitable for e-commerce platforms.
+Authentication: Implemented with JWT for secure and scalable user session management.
+
+
+
+            </h6>
+            <div class="div1">
+              <a href="https://github.com/mohaimin37/foodfrontend" class="btn btn-primary">GITHUB (SOURCE-CODE-FRONTEND)</a>
+              <a href="https://github.com/mohaimin37/foodpandas" class="btn btn-primary">GITHUB (SOURCE-CODE-BACKEND)</a>
+            
+              <a href="https://magical-longma-d1c076.netlify.app/" class="btn btn-primary">GO-TO APPLICATION</a>
+            
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <!-- Card 3 -->
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <img src="amazon.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title">AMAZON CLONE</h5>
+            <h6 class="card-text">Overview : Amazon Clone is a front-end web project designed to replicate the user interface of Amazon, a global e-commerce leader. This project focuses on using HTML and CSS to create a visually appealing and responsive design, showcasing proficiency in web design and front-end development.</h6>
+            <h6>
+              Home Page:
+
+Developed a detailed home page with a navigation bar, search bar, and multiple product categories.
+Implemented featured products and promotional banners to mimic Amazon's layout.
+Product Listings:
+
+Created product listing pages that display products in a grid format.
+Included product images, titles, prices, and ratings to provide comprehensive product information.
+
+Responsive Design:
+
+Ensured the website is fully responsive, adapting to various screen sizes from desktops to mobile devices.
+Used CSS media queries to adjust layouts and styles for different devices.
+
+            </h6>
+            <h6>
+              HTML5:
+
+Utilized semantic HTML5 elements to structure the content, ensuring accessibility and SEO friendliness.
+Organized the code with clear and logical division of sections, such as header, main content, and footer.
+CSS3:
+
+Used modern CSS techniques, including Flexbox and Grid, to create a flexible and efficient layout.
+Applied CSS transitions and animations for a smooth user interaction experience.
+Implemented custom CSS styles to match Amazon's branding and design language.
+            </h6>
+            <div class="div1">
+              <a href="https://github.com/mohaimin37/amazon" class="btn btn-primary">GITHUB (SOURCE-CODE)</a>
+              <a href="https://mohaimin37.github.io/amazon/" class="btn btn-primary">GO-TO APPLICATION</a>
+            
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <img src="todo.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title" id="wow">TO-DO APP</h5>
+            <h6 class="card-text">
+
+              Overview :
+The To-Do App is a simple, intuitive application designed to help users manage their daily tasks effectively. Built using HTML, CSS, and JavaScript, this app provides a user-friendly interface for adding, deleting, and marking tasks as complete.
+</h6>
+<h6>
+  Features :
+Add Tasks: Users can easily add new tasks to their to-do list.
+Delete Tasks: Tasks can be removed with a single click.
+Mark as Complete: Users can mark tasks as completed, which visually distinguishes them from pending tasks.
+Responsive Design: The app is fully responsive and works seamlessly on both desktop and mobile devices.
+</h6>
+<h5>
+  Technologies Used :
+HTML: Structuring the application’s content.
+CSS: Styling the application to enhance the user experience.
+JavaScript: Implementing functionality such as adding, deleting, and marking tasks.
+Code Highlights
+Dynamic Task Management: JavaScript functions handle task operations dynamically without needing to reload the page.
+Local Storage: Utilizes local storage to save tasks, ensuring that the to-do list persists even after the browser is closed.
+
+</h5>
+
+
+<div class="div1">
+  <a href="https://github.com/mohaimin37/todolist" class="btn btn-primary">GITHUB (SOURCE-CODE)</a>
+  <a href="https://mohaimin37.github.io/todolist/" class="btn btn-primary">GO-TO APPLICATION</a>
+
+
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <!-- Card 4 -->
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <img src="quiz.jpg" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title">Quiz Game Application</h5>
+            <p class="card-text">
+             Overview : The Quiz App is an interactive web application designed to test users' knowledge on various topics through multiple-choice questions. This project showcases front-end development skills using HTML, CSS, and JavaScript, highlighting the ability to create dynamic and engaging user interfaces.
+            </p>
+            <h6>
+              Key Features :
+
+Developed a clean and intuitive user interface with a focus on usability and accessibility.
+Implemented a start screen, quiz screen, and results screen for seamless navigation through the app.
+Dynamic Questions:
+
+Loaded questions dynamically from a JavaScript array, allowing easy updates and modifications.
+Incorporated a variety of question types, including multiple-choice and true/false questions.
+Interactive Elements:
+
+Added interactive elements such as buttons for starting the quiz, submitting answers, and navigating through questions.
+Used visual feedback to indicate correct and incorrect answers.
+Score Calculation:
+
+Implemented real-time score calculation and display, providing immediate feedback to users.
+Displayed a summary of results at the end of the quiz, including the total score and correct answers.
+Responsive Design:
+
+Ensured the app is fully responsive, providing a consistent experience across desktops, tablets, and mobile devices.
+Utilized CSS media queries to adjust the layout and styles for different screen sizes.
+            </h6>
+            <h6>
+Technical Details
+HTML5:
+
+Structured the application using semantic HTML5 elements for better readability and accessibility.
+Created distinct sections for the start screen, quiz content, and results summary.
+CSS3:
+
+Styled the application using modern CSS techniques, including Flexbox for layout management.
+Applied custom styles to buttons, question cards, and feedback messages to enhance the user experience.
+JavaScript:
+
+Utilized vanilla JavaScript to handle the quiz logic, including question navigation, answer validation, and score calculation.
+Implemented event listeners for user interactions, ensuring a responsive and interactive experience.
+Used local storage to save quiz progress, allowing users to resume their quiz if they navigate away from the page.
+            </h6>
+            <div class="div1">
+              <a href="https://github.com/mohaimin37/quizapp" class="btn btn-primary">GITHUB (SOURCE-CODE)</a>
+              <a href="https://mohaimin37.github.io/quizapp/" class="btn btn-primary">GO-TO APPLICATION</a>
+            
+            
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Card 5 -->
+  
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
